@@ -26,7 +26,7 @@ app = Flask(__name__)
 
 @app.route("/chat", methods=["POST","GET"])
 def chat():
-    data = request.args
+    data = request.json
     user_input = data.get("user_input")
     response = greenhouse_chatbot(user_input)
     return jsonify({"response": response})
