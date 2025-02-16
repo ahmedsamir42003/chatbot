@@ -24,7 +24,7 @@ def greenhouse_chatbot(prompt):
 
 app = Flask(__name__)
 
-@app.route("/chat", methods=["POST"])
+@app.route("/chat", methods=["POST","GET"])
 def chat():
     data = request.get_json()
     user_input = data.get("user_input")
