@@ -47,7 +47,7 @@ def extract_text_from_pdf(pdf_path):
     return text
 
 # Correct way - pass the file path directly to extract_text_from_pdf
-pdf_file_path = "pdftrain/.pdf"  
+pdf_file_path = "document.pdf"  
 pdf_text = extract_text_from_pdf(pdf_file_path)
 
 text_splitter = RecursiveCharacterTextSplitter(
