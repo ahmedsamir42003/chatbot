@@ -1,2 +1,8 @@
 flask
 google-generativeai
+pandasql
+PyMuPDF==1.22.5
+langchain==0.1.11
+tiktoken
+langchain_google_genai
+PyPDF2
